@@ -1,2 +1,2 @@
 # nutlet
-Aimed at learning of the CSLA framework website
+Aimed at promoting of the CSLA framework website
