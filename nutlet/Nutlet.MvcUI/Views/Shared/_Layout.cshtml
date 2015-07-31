@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - 我的 ASP.NET 应用程序</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+  
+
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">CSLA.NET中文网</a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">@Html.ActionLink("主页", "Index", "Home")</li>
+                    
+                    <li class="dropdown">
+                        <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">CSLA.NET <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">关于作者</a></li>
+                            <li><a href="#">CSLA.NET简介</a></li>
+                            <li><a href="#">历史版本</a></li>
+                            <li><a href="#">许可</a></li>
+                            <li><a href="#">代码托管</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">精选案例</a></li>
+                    <li class="dropdown">
+                        <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">教程 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">分布式架构</a></li>
+                            <li><a href="#">框架设计</a></li>
+                            <li><a href="#">面向对象应用程序设计</a></li>
+                            <li><a href="#">CSLA.NET对象构造</a></li>
+                            <li><a href="#">CSLA.NET对象模板</a></li>
+                            <li><a href="#">业务框架实现</a></li>
+                            <li><a href="#">属性声明</a></li>
+                            <li><a href="#">对象状态管理</a></li>
+                            <li><a href="#">父子关系</a></li>
+                            <li><a href="#">数据绑定</a></li>
+                            <li><a href="#">业务和验证规则</a></li>
+                            <li><a href="#">身份验证和授权</a></li>
+                            <li><a href="#">等级撤销</a></li>
+                            <li><a href="#">LINQ to CSLA</a></li>
+                            <li><a href="#">持久性和数据门户</a></li>
+                            <li><a href="#">其他框架实现</a></li>
+                        </ul>
+                    </li>
+                   
+                    <li class="dropdown">
+                        <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">社区 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">论坛</a></li>
+                            <li><a href="#">搏客</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">下载 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">框架</a></li>
+                            <li><a href="#">出版物</a></li>
+                            <li><a href="#">辅助工具</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+
+    </div>
+   
+  
+</body>
+</html>
