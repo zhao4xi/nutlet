@@ -17,5 +17,6 @@ namespace Nutlet.MvcUI
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+        //测试提交 注释信息
     }
 }
